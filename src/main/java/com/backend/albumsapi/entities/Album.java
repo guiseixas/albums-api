@@ -3,7 +3,7 @@ package com.backend.albumsapi.entities;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "tb_game")
+@Table(name = "tb_album")
 public class Album {
 
     @Id
@@ -23,8 +23,10 @@ public class Album {
 
     private String image;
 
+    @Column(columnDefinition = "TEXT")
     private String shortDescription;
 
+    @Column(columnDefinition = "TEXT")
     private String longDescription;
 
     public Long getId() {
